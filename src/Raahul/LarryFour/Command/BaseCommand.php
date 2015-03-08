@@ -67,8 +67,8 @@ class BaseCommand extends Command {
 
         // Initial the paths to the model and migration folder, and then the
         // writer class
-        $modelPath = app_path() . '/models/';
-        $migrationPath = app_path() . '/database/migrations/';
+        $modelPath = app_path();
+        $migrationPath = base_path() . '/database/migrations/';
 
         $this->larryWriter = new Writer($modelPath, $migrationPath);
     }
