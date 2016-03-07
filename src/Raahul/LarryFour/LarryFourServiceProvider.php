@@ -22,7 +22,9 @@ class LarryFourServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('raahul/larryfour');
+		if (method_exists($this, 'package')) {
+			$this->package('raahul/larryfour');
+		}
 	}
 
 	/**
