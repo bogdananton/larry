@@ -15,8 +15,8 @@
         "raahul/schema-extractor": "1.*"
     },
     "autoload": {
-        "psr-0": {
-            "Raahul\\LarryFour": "src/"
+        "psr-4": {
+            "Raahul\\LarryFour\\": "src/Raahul/LarryFour"
         }
     },
     "minimum-stability": "dev"
